@@ -14,29 +14,33 @@
 
         .time-number {
             font-size: 48px;
-            font-weight: bold;
-            color: #333;
-            background: #f5f5f5;
+            font-weight: 400;
+          background: linear-gradient(135deg, #5150F9, #9615FA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
             padding: 20px;
             border-radius: 10px;
             min-width: 100px;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-top: 10px;
         }
         
         .time-label {
             font-size: 16px;
             color: #666;
-            margin-top: 10px;
+           
             font-weight: 500;
         }
-        p{
-            font-size: 50px !important;
-        }
-       
-
-
-
+        
+        
+        
         
     }
+    p{
+        font-size: 50px !important;
+       
+    }
 }
+
 
