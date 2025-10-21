@@ -1,0 +1,21 @@
+.cats_photo_button{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column;
+
+    button{
+        border:none;
+        font-size: 50px;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: #ddb9ff;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover{
+            color: #000000;
+        }
+    }
+    
+}
