@@ -12,11 +12,9 @@ function App() {
       <div className='title'>
         <h1>Часы с котиками</h1>
       </div>
-
-     
       <div className="clock">
         <div className="time">
-           {/* Задание 1. Часть 2 */}
+          {/* Задание 1. Часть 2 */}
           <h1>Текущее время</h1>
           <Clock_alive />
           {/* Задание 1. Часть 1 */}
@@ -25,12 +23,10 @@ function App() {
           <Clock time={{ hours: 12, minutes: 3, seconds: 29 }}/>
           <Clock time={{ hours: 6, minutes: 26, seconds: 5 }}/>
         </div>
-
         {/* Задание 2*/}
         <div className="photo_cats">
           <Cats />
         </div>
-        
       </div>
     </div>
   );

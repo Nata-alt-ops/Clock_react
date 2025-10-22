@@ -9,7 +9,10 @@
         h1{
             font-family: 'Courier New', Courier, monospace;
             font-size: 50px;
-            color: #000000;
+            background: linear-gradient(135deg, #2563eb, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
     }
     .clock{
@@ -18,7 +21,10 @@
         h1{
             font-family: 'Courier New', Courier, monospace;
             font-size: 50px;
-            color: #000000;
+             background: linear-gradient(135deg, #2563eb, #9333ea);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
     }
     .time, .photo_cats {

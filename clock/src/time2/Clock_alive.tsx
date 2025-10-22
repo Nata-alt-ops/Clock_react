@@ -39,24 +39,27 @@ export const Clock_alive = () =>{
             <div className="time-block">
                 <div className="time-number">
                     <div className="time_text">
-                       {format_time(time.hours)}</div></div>
+                       {format_time(time.hours)}
+                    </div>
+                </div>
                 <div className="time-label">Часы</div>
             </div>
             <p>:</p>
-            
-            
             <div className="time-block">
                 <div className="time-number">
-                     <div className="time_text">
-                        {format_time(time.minutes)}</div></div>
+                    <div className="time_text">
+                        {format_time(time.minutes)}
+                    </div>
+                </div>
                 <div className="time-label">Минуты</div>
             </div>
             <p>:</p>
             <div className="time-block">
                 <div className="time-number">
-                     <div className="time_text">
+                    <div className="time_text">
                         {format_time(time.seconds)}
-                        </div></div>
+                    </div>
+                </div>
                 <div className="time-label">Секунды</div>
             </div>
         </div>
