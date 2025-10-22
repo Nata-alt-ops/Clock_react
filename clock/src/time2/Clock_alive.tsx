@@ -11,7 +11,8 @@ export const Clock_alive = () =>{
     const[time, setTime] = useState({
         hours: 0,
         minutes: 0,
-        seconds: 0
+        seconds: 0,
+      
     });
 
     useEffect(() => {
@@ -20,7 +21,7 @@ export const Clock_alive = () =>{
             setTime({
                 hours: time_now.getHours(),
                 minutes: time_now.getMinutes(),
-                seconds: time_now.getSeconds(),
+                seconds: time_now.getSeconds()
             });
         };
 
@@ -63,6 +64,7 @@ export const Clock_alive = () =>{
                 <div className="time-label">Секунды</div>
             </div>
         </div>
+            
     </div>
    )
 }

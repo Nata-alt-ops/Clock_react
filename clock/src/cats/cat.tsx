@@ -40,7 +40,7 @@ export const Cats = () =>{
     }, []);
 
     
-    if (!cats) return <div>No cat found</div>;
+    if (!cats) return <div>Котиков нету</div>;
     return(
         <div className="cats_photo_button ">
             <div className="card">
