@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { Clock } from "../time/Clock";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import './Clock.scss';
+import './Clock_alive.scss';
 
 export const Clock_alive = () =>{
     const format_time = (num:any) => String(num).padStart(2, '0');
@@ -31,25 +31,32 @@ export const Clock_alive = () =>{
         return () => clearInterval(time_interval);
     }, []);
 
-   /*return <Clock time={time} />*/
+  
 
    return(
     <div className="time">
         <div className="card">
             <div className="time-block">
-                <div className="time-number">{format_time(time.hours)}</div>
+                <div className="time-number">
+                    <div className="time_text">
+                       {format_time(time.hours)}</div></div>
                 <div className="time-label">Часы</div>
             </div>
             <p>:</p>
             
             
             <div className="time-block">
-                <div className="time-number">{format_time(time.minutes)}</div>
+                <div className="time-number">
+                     <div className="time_text">
+                        {format_time(time.minutes)}</div></div>
                 <div className="time-label">Минуты</div>
             </div>
             <p>:</p>
             <div className="time-block">
-                <div className="time-number">{format_time(time.seconds)}</div>
+                <div className="time-number">
+                     <div className="time_text">
+                        {format_time(time.seconds)}
+                        </div></div>
                 <div className="time-label">Секунды</div>
             </div>
         </div>

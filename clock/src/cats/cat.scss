@@ -1,4 +1,5 @@
 .cats_photo_button{
+    background: linear-gradient(135deg, #eff6ff, #faf5ff);
     width: 100%;
     height: 100%;
     display: flex;
@@ -16,6 +17,11 @@
         &:hover{
             color: #000000;
         }
+    }
+
+    img{
+        width: min(90vw, 500px);
+        height: min(90vw, 500px);
     }
     
 }

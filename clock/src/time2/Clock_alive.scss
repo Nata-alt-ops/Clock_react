@@ -1,33 +1,36 @@
-.time-static{
-    background: linear-gradient(135deg, #eff6ff, #faf5ff) !important;
+.time{
+     background: linear-gradient(135deg, #eff6ff, #faf5ff) !important;
     .card{
+        padding: 40px;
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 45px;
+        border-radius: 12px;
         height: 100%;
-        background: none;
-        box-shadow: none !important;
-        border:none !important;
-        padding: 0 !important;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        border: 1px solid #dce9fa;
 
-        .time-block-static {
+        
+        
+    
+        .time-block {
             display: flex;
             flex-direction: column;
             align-items: center;
             
     
-            .time-number-static {
+            .time-number {
                 font-size: 48px;
                 font-weight: 400;
-                background-color: #fff;
+                background: linear-gradient(135deg, #eff6ff, #faf5ff) !important;
                 padding: 20px;
                 border-radius: 10px;
                 min-width: 100px;
-                margin-top: 0px;
+                margin-top: 10px;
                 border: 1px solid #dce9fa;
 
-                .time_text-static{
+                .time_text{
                     background: linear-gradient(135deg, #2563eb, #9333ea);
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
@@ -36,9 +39,9 @@
                 
             }
             
-            .time-label-static {
+            .time-label {
                 font-size: 16px;
-                color: #000000;
+                color: #939ba5;
                 margin-top: 10px;
                 font-weight: 500;
                 font-family: 'Courier New', Courier, monospace;
@@ -54,6 +57,6 @@
            
         }
     }
-  
-    
 }
+
+

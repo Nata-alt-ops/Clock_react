@@ -8,10 +8,32 @@ export const Clock = ({ time }: any) =>{
     const format_time = (num:any) => String(num).padStart(2, '0');
 
     return(
-        <div className="time d-flex justify-content-start align-items-center flex-colum">
-            <div className="clock d-flex justify-content-center align-items-center">
-                {format_time(hours)}:{format_time(minutes)}:{format_time(seconds)}  
+        <div className="time-static d-flex justify-content-start align-items-center flex-colum">
+            <div className="card">
+            <div className="time-block-static">
+                <div className="time-number-static">
+                    <div className="time_text-static">
+                       {format_time(time.hours)}</div></div>
+                <div className="time-label-static">Часы</div>
             </div>
+            <p>:</p>
+            
+            
+            <div className="time-block-static">
+                <div className="time-number-static">
+                     <div className="time_text-static">
+                        {format_time(time.minutes)}</div></div>
+                <div className="time-label-static">Минуты</div>
+            </div>
+            <p>:</p>
+            <div className="time-block-static">
+                <div className="time-number-static">
+                     <div className="time_text-static">
+                        {format_time(time.seconds)}
+                        </div></div>
+                <div className="time-label-static">Секунды</div>
+            </div>
+        </div>
     </div>
     )
 }
